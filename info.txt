@@ -1,0 +1,13 @@
+
+vim test.txt
+:set fileencoding=utf8
+:set bomb
+:w
+
+sed -i -e "s/ Copyright/ $(echo -e "\xc2\xa9") Copyright/" text.utf8
+
+
+https://www.utf8-chartable.de/unicode-utf8-table.pl
+
+
+2700-27BF: Dingbats
